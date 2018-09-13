@@ -1,4 +1,0 @@
-"/Users/daniilgagarinov/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/182.3911.40/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/daniilgagarinov/Documents/GitHub/seminars
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/daniilgagarinov/Documents/GitHub/seminars/cmake-build-debug
