@@ -7,7 +7,7 @@
 #include <assert.h>
 #include <algorithm>
 
-void readArray (int* arr, size_t size) {
+void readArray(int* arr, size_t size) {
     for (size_t i{0}; i < size; ++i) {
         std::cin >> arr[i];
     }
@@ -19,7 +19,7 @@ void printArray(int* arr, size_t size) {
     }
 }
 
-void reverseArray (int* arr, size_t size) {
+void reverseArray(int* arr, size_t size) {
     for (size_t i{0}; i < size/2; ++i) {
         std::swap(arr[i], arr[size-i-1]);
     }

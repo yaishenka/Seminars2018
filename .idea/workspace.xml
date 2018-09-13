@@ -15,7 +15,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="683845f1-c809-4956-a414-df46b7c0613e" name="Default Changelist" comment="" />
+    <list default="true" id="683845f1-c809-4956-a414-df46b7c0613e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_6.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1_6.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/2_4.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/4_2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/5_2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/5_2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/5_2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/5_2.dir/5_2.cpp.o" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +46,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="7505" />
+          <entry key="cpp" value="9560" />
           <entry key="txt" value="42" />
         </counts>
       </usages-collector>
@@ -46,7 +54,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="42" />
           <entry key="Doxygen file" value="3" />
-          <entry key="ObjectiveC" value="7502" />
+          <entry key="ObjectiveC" value="9557" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages" />
@@ -61,6 +69,7 @@
           <entry key="initializer_list" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -74,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1_6.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+            <state relative-caret-position="741">
+              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
               <folding>
                 <element signature="e#184#203#0" expanded="true" />
               </folding>
@@ -89,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2_4.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="2128">
+              <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
               <folding>
                 <element signature="e#422#441#0" expanded="true" />
                 <element signature="e#595#607#0" expanded="true" />
@@ -103,25 +112,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4_2.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1558">
-              <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="13" />
+            <state relative-caret-position="196">
+              <caret line="75" selection-start-line="75" selection-end-line="80" selection-end-column="1" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#68#80#0" expanded="true" />
+                <element signature="e#1846#1858#0" expanded="true" />
+                <element signature="e#1959#1971#0" expanded="true" />
+                <element signature="e#2025#2037#0" expanded="true" />
+                <element signature="e#2294#2306#0" expanded="true" />
+                <element signature="e#2558#2570#0" expanded="true" />
+                <element signature="e#2775#2787#0" expanded="true" />
+                <element signature="e#3012#3024#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/5_2.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="463">
+              <caret line="143" column="13" lean-forward="true" selection-end-line="150" />
               <folding>
                 <element signature="e#48#67#0" expanded="true" />
                 <element signature="e#151#163#0" expanded="true" />
                 <element signature="e#242#255#0" expanded="true" />
+                <element signature="e#1307#1319#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,15 +146,18 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/0309.cpp" />
-        <option value="$PROJECT_DIR$/1_6.cpp" />
         <option value="$PROJECT_DIR$/3_1.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/4_2.cpp" />
+        <option value="$PROJECT_DIR$/1_6.cpp" />
         <option value="$PROJECT_DIR$/2_4.cpp" />
+        <option value="$PROJECT_DIR$/4_2.cpp" />
         <option value="$PROJECT_DIR$/5_2.cpp" />
       </list>
     </option>
@@ -148,6 +168,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
@@ -244,12 +265,12 @@
       <workItem from="1536441275751" duration="4595000" />
       <workItem from="1536683516316" duration="722000" />
       <workItem from="1536734827959" duration="335000" />
-      <workItem from="1536875279856" duration="237000" />
+      <workItem from="1536875279856" duration="6674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52035000" />
+    <option name="totallyTimeSpent" value="58472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -259,8 +280,8 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -309,10 +330,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1_6.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <element signature="e#184#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2_4.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="2128">
+          <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
           <folding>
             <element signature="e#422#441#0" expanded="true" />
             <element signature="e#595#607#0" expanded="true" />
@@ -323,33 +354,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/4_2.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="13" />
+        <state relative-caret-position="196">
+          <caret line="75" selection-start-line="75" selection-end-line="80" selection-end-column="1" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#68#80#0" expanded="true" />
+            <element signature="e#1846#1858#0" expanded="true" />
+            <element signature="e#1959#1971#0" expanded="true" />
+            <element signature="e#2025#2037#0" expanded="true" />
+            <element signature="e#2294#2306#0" expanded="true" />
+            <element signature="e#2558#2570#0" expanded="true" />
+            <element signature="e#2775#2787#0" expanded="true" />
+            <element signature="e#3012#3024#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/5_2.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="463">
+          <caret line="143" column="13" lean-forward="true" selection-end-line="150" />
           <folding>
             <element signature="e#48#67#0" expanded="true" />
             <element signature="e#151#163#0" expanded="true" />
             <element signature="e#242#255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1_6.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-          <folding>
-            <element signature="e#184#203#0" expanded="true" />
+            <element signature="e#1307#1319#0" expanded="true" />
           </folding>
         </state>
       </provider>

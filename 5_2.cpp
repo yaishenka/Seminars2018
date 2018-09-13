@@ -19,8 +19,9 @@ class Stack {
         size_t capacity() const {return _capacity; }
         size_t busy() const {return _busy; }
 
-        T pop_back();
-        void push_back(T a);
+        T top();
+        T pop();
+        void push(T a);
 
     private:
         void resize();
@@ -43,7 +44,15 @@ Stack<T>::~Stack() {
 }
 
 template<typename T>
-T Stack<T>::pop_back() {
+T Stack<T>::top() {
+    if (!_busy) {
+        return -1;
+    }
+    return _buffer[_tail-1];
+}
+
+template<typename T>
+T Stack<T>::pop() {
     if (!_busy) {
         return -1;
     }
@@ -52,7 +61,7 @@ T Stack<T>::pop_back() {
 }
 
 template<typename T>
-void Stack<T>::push_back(T a) {
+void Stack<T>::push(T a) {
     if (_capacity == _busy) {
         resize();
     }
@@ -79,68 +88,60 @@ std::ostream& operator<<(std::ostream& os, Stack<T>& stack) {
     return os;
 }
 
+bool cStringEqual(const char* str1, const char* str2) {
+    size_t it{0};
+    while (str1[it] != '\0' && str2[it] != '\0') {
+        if (str1[it] != str2[it]) {
+            return false;
+        }
+        it++;
+    }
+    return true;
+}
 
+bool isStackAnagram(std::string w1, std::string w2) {
+    Stack<char> stack{};
 
+    size_t firstIt{0};
+    size_t secondIt{0};
 
+    std::string ans;
+
+    bool canContinue{true};
+    while (canContinue) {
+        if (firstIt < w1.size()) {
+            if (w1[firstIt] == w2[secondIt]) {
+                ans += w1[firstIt];
+                firstIt++;
+                secondIt++;
+            } else {
+                if (stack.top() == w2[secondIt]) {
+                    ans += stack.pop();
+                    secondIt++;
+                } else {
+                    stack.push(w1[firstIt++]);
+                }
+            }
+        } else {
+            if (!stack.busy() || stack.top() != w2[secondIt]) {
+                canContinue = false;
+            } else {
+                ans += stack.pop();
+                secondIt++;
+            }
+        }
+    }
+
+    return ans == w2;
+}
 
 int main() {
-    Stack<int> stack;
-    stack.push_back(1);
-    std::cout << stack << std::endl;
-    stack.push_back(2);
-    std::cout << stack << std::endl;
-    stack.push_back(3);
-    std::cout << stack << std::endl;
-    stack.push_back(4);
-    std::cout << stack << std::endl;
-    stack.push_back(5);
-    std::cout << stack << std::endl;
-    stack.push_back(6);
-    std::cout << stack << std::endl;
-    std::cout << stack.pop_back();
-    std::cout << stack.pop_back();
-    std::cout << stack.pop_back();
-    std::cout << stack.pop_back();
-    std::cout << stack.pop_back();
-    std::cout << stack.pop_back();
-    std::cout << stack << std::endl;
+    std::string str1, str2;
+
+    std::cin >> str1 >> str2;
+    std::cout << (isStackAnagram(str1, str2) ? "YES" : "NO");
+
     return 0;
-//    string str1,str2,ans;
-//    int position(0);
-//    int position2(0);
-//    cin>>str1>>str2;
-//    Deque stack;
-//    bool canwego(true);
-//    while (canwego==true and position2<str2.size()){
-//        if (position<=str1.size()) {
-//            if (str1[position]==str2[position2]) {
-//                ans+=str1[position];
-//                position2++;
-//                position++;
-//            } else {
-//                if (stack.what_up()==str2[position2]) {
-//                    ans+=stack.pop_front();
-//                    position2 += 1;
-//                } else {
-//                    stack.push_front(str1[position]);
-//                    position +=1 ;
-//                }
-//            }
-//        } else {
-//            if (stack.givesize()==0 || stack.what_up()!=str2[position2]) {
-//                canwego=false;
-//            } else {
-//                ans+=stack.pop_front();
-//                position2+=1;
-//            }
-//        }
-//    }
-//
-//
-//
-//    if (ans==str2) {
-//        cout<<"YES";
-//    } else cout<<"NO";
 }
 
 

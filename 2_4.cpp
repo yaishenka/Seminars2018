@@ -23,14 +23,14 @@ class ArrayWrapper {
         ArrayWrapper(T* arr, size_t size);
         ArrayWrapper(size_t size);
 
-        size_t size () const {return _size; }
+        size_t size() const {return _size; }
 
         int find(T el);
-        void erase (int it);
+        void erase(int it);
 
         void fullArrayWithOrderNumbers();
 
-        T operator [] (int i) {return arr[i]; }
+        T operator[](int i) {return arr[i]; }
 
         T* arr;
     private:
@@ -38,7 +38,7 @@ class ArrayWrapper {
 };
 
 template <typename T>
-std::ostream& operator << (std::ostream& os, ArrayWrapper<T>& arr) {
+std::ostream& operator<<(std::ostream& os, ArrayWrapper<T>& arr) {
     for (int i{0}; i < arr.size(); ++i) {
         os << arr[i] << " ";
     }
@@ -75,13 +75,11 @@ int main() {
 
 template <typename T>
 ArrayWrapper<T>::ArrayWrapper(T* arr, size_t size) : arr(arr), _size(size)
-{
-
-}
+{}
 
 template <typename T>
 ArrayWrapper<T>::ArrayWrapper(size_t size) : _size(size) {
-    arr = new T (size);
+    arr = new T(size);
 }
 
 template <typename T>
@@ -99,14 +97,17 @@ void ArrayWrapper<T>::erase(int it) {
     if (it == -1) {
         return;
     }
+
     _size--;
     int* newArr  = new int [_size];
+
     for (int i{0}; i < it; ++i) {
         newArr[i] = arr[i];
     }
     for (int i{it}; i < _size; ++i) {
         newArr[i] = arr[i + 1];
     }
+
     delete (arr);
     arr = newArr;
 }
