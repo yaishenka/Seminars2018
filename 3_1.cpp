@@ -28,49 +28,55 @@ size_t middleIndex (size_t left, size_t right) {
     return (right + left) / 2;
 }
 
-size_t* minIndexArray (int* A, int* B, size_t aSize, size_t bSize) {
-    size_t* minIndexArray = new size_t (bSize);
+void minIndexArray (int* A, int* B, size_t aSize, size_t bSize) {
+    size_t minIndexArray [bSize];
     for (size_t bIterator{0}; bIterator < bSize; ++bIterator) {
         int currentB = B[bIterator];
+
         if (currentB > A[aSize - 1]) {
             minIndexArray[bIterator] = aSize;
             continue;
         }
-//        size_t right{1};
-//        while (right < aSize && currentB > A[right]) {
-//            right *= 2;
-//        }
-//        size_t left = right / 2;
-//        if (right > aSize) {
-//            right = aSize - 1;
-//        }
-        int left = 0;
-        int right = aSize - 1;
-        while (left <= right) {
+
+        size_t right{1};
+        while (right < aSize && currentB > A[right]) {
+            right *= 2;
+        }
+
+        size_t left = right / 2;
+
+        if (right > aSize) {
+            right = aSize - 1;
+        }
+
+        while (right - left > 1) {
             size_t middle = middleIndex(left, right);
-            if (A[middle] < currentB) {
-                left = middle + 1;
-            } else if (A[middle] >= currentB && (!middle || A[middle - 1] < currentB)) {
-                minIndexArray[bIterator] = middle;
-                break;
-            } else {
+            if (A[middle] >= currentB) {
                 right = middle;
+            } else {
+                left = middle;
             }
         }
+
+        minIndexArray[bIterator] = A[left] >= currentB ? left : right;
     }
-    return  minIndexArray;
+    printArray(minIndexArray, bSize);
 }
 
 
 
 int main() {
     int n, m;
+
     std::cin >> n >> m;
     assert(n <= 10000);
     assert(m <= 10000);
-    int* A = new int(n);
-    int* B = new int(m);
+
+    int A[n];
+    int B[m];
+
     readArray(A, n);
     readArray(B, m);
-    printArray(minIndexArray(A, B, n, m), m);
+
+    minIndexArray(A, B, n, m);
 }

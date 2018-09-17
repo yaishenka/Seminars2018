@@ -105,7 +105,7 @@ Deque<T>::~Deque() {
 
 template<typename T>
 T Deque<T>::pop_front() {
-    T result(-1); //only if T have conversion or construct from -1
+    T result(-1); //only if T have conversion to -1 or construct from -1
 
     if (_busy) {
         result = _buffer[_head];
